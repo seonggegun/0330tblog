@@ -1,5 +1,7 @@
 package com.sg.kim.controller;
 
+import java.util.function.Supplier;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +17,7 @@ import com.sg.kim.repository.UserRepository;
 
 @Controller
 public class UserController {
-
+	
 	@Autowired
 	private UserRepository userRepository;
 	
@@ -35,4 +37,5 @@ public class UserController {
 		});
 		return findUser;
 	}
+
 }
